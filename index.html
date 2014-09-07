@@ -1,16 +1,284 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
-    
-    <title></title>
-    
-    <link rel="stylesheet" href="css/style.min.css">
+	<title>Rapid</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700;Bree+Serif' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
 
-    
+	<div class="_header__wrapper">
+		<div class="container">
+			<h1 class="_header__logo">Rapid</h1>
+			<ul class="_header__primary-nav">
+				<li><a class="_header__primary-link" href="#headers">Headers</a></li>
+				<li><a class="_header__primary-link" href="#footers">Footers</a></li>
+				<li><a class="_header__primary-link" href="#colboxes">Colboxes</a></li>
+				<li><a class="_header__primary-link" href="#media-objects">Media objects</a></li>
+				<li><a class="_header__primary-link" href="#forms">Forms</a></li>
+			</ul>
+		</div>
+	</div>
 
+	<div class="container">
+
+		<section class="_section">
+
+			<h1 class="_section__title" id="headers">Headers</h1>
+			<hr>
+
+			<article class="_module">
+				<h2 class="_module__title">Thin header</h2>
+				<!--  start module -->
+				<header class="header--thin">
+					<a href="#" class="header__logo">Logo</a>
+					<ul class="header__primary-nav">
+						<li><a class="header__primary-link" href="#">Home</a></li>
+						<li><a class="header__primary-link" href="#">About</a></li>
+						<li><a class="header__primary-link" href="#">Contact</a></li>
+						<li><button class="header__cta button--primary">Sign up</button></li>
+					</ul>
+				</header>
+				<!--  end module -->
+			</article>
+
+			<article class="_module">
+				<h2 class="_module__title">Thick header</h2>
+				<!--  start module -->
+				<header class="header--thick">
+					<a href="#" class="header__logo">Logo</a>
+					<ul class="header__secondary-nav">
+						<li><a class="header__secondary-link" href="#">Profile</a></li>
+						<li><a class="header__secondary-link" href="#">Help</a></li>
+						<li><a class="header__secondary-link" href="#">Logout</a></li>
+					</ul>
+					<ul class="header__primary-nav">
+						<li><a class="header__primary-link" href="#">Home</a></li>
+						<li><a class="header__primary-link" href="#">About</a></li>
+						<li><a class="header__primary-link" href="#">Contact</a></li>
+					</ul>
+				</header>
+				<!--  end module -->
+			</article>
+		</section>
+
+		<section class="_section">
+
+			<h1 class="_section__title" id="footers">Footers</h1>
+			<hr>
+
+			<article class="_module">
+				<h2 class="_module__title">Thin footer</h2>
+				<!--  start module -->
+				<footer class="footer--thin">
+					<ul class="footer__primary-nav">
+						<li><a class="footer__item" href="#">Home</a></li>
+						<li><a class="footer__item" href="#">About</a></li>
+						<li><a class="footer__item" href="#">Contact</a></li>
+					</ul>
+					<ul class="footer__secondary-nav">
+						<li class="footer__item">&copy; HooHaa Ltd</li>
+					</ul>
+				</footer>
+				<!--  end module -->
+			</article>
+
+			<article class="_module">
+				<h2 class="_module__title">Thick footer</h2>
+				<!--  start module -->
+				<footer class="footer--thick">
+					<ul class="footer__list">
+						<li class="footer__list-title">List One</li>
+						<li><a class="footer__list-item" href="#">Home</a></li>
+						<li><a class="footer__list-item" href="#">About</a></li>
+						<li><a class="footer__list-item" href="#">Contact</a></li>
+					</ul>
+					<ul class="footer__list">
+						<li class="footer__list-title">List Two</li>
+						<li><a class="footer__list-item" href="#">Home</a></li>
+						<li><a class="footer__list-item" href="#">About</a></li>
+						<li><a class="footer__list-item" href="#">Contact</a></li>
+					</ul>
+					<ul class="footer__list">
+						<li class="footer__list-title">List Three</li>
+						<li><a class="footer__list-item" href="#">Home</a></li>
+						<li><a class="footer__list-item" href="#">About</a></li>
+						<li><a class="footer__list-item" href="#">Contact</a></li>
+					</ul>
+					<ul class="footer__list">
+						<li class="footer__list-item">&copy; HooHaa Ltd</li>
+					</ul>
+				</footer>
+				<!--  end module -->
+			</article>
+		</section>
+
+		<section class="_section">
+
+			<h1 class="_section__title" id="colboxes">Colboxes</h1>
+			<hr>
+
+			<div class="row">
+				<div class="col-md-3">
+					<!-- start module -->
+						<div class="colbox">
+							<span class="colbox__icon"></span>
+							<h3 class="colbox__title">Lorem ipsum dolor sit amet</h3>
+							<div class="colbox__body">
+								<p>This colbox has all three components - an image, title and body box.</p>
+								<p>The body box contains one or more paragraphs.</p>
+							</div>
+						</div>
+					<!-- end module -->
+				</div>
+				<div class="col-md-3">
+					<!-- start module -->
+						<div class="colbox">
+							<h3 class="colbox__title">Duis aute irure</h3>
+							<div class="colbox__body">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua.</p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod	tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+							<a href="#" class="colbox__button button">Call to action</a>
+						</div>
+					<!-- end module -->
+				</div>
+				<div class="col-md-3">
+					<!-- start module -->
+						<div class="colbox">
+							<span class="colbox__image"></span>
+							<div class="colbox__body">
+								<p>This one has no image or title, it's just one paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+					<!-- end module -->
+				</div>
+				<div class="col-md-3">
+					<!-- start module -->
+						<div class="colbox">
+							<div class="colbox__body">
+								<p>This one has no image or title. </p>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+							</div>
+						</div>
+					<!-- end module -->
+				</div>
+			</div>
+		</section>
+
+		<section class="_section">
+
+			<h1 class="_section__title" id="media-objects">Media object</h1>
+			<hr>
+
+			<article class="_module">
+
+				<h2 class="_module__title">Horizontal - wide</h2>
+
+				<div class="row">
+					<div class="col-md-12">
+						<!-- start module -->
+						<div class="media-object--horizontal">
+							<span class="media-object__image">image</span>
+							<div class="media-object__body">
+								<h1 class="media-object__title">Article title</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, aspernatur, quia modi minima debitis tempora ducimus quam vero impedit alias earum nemo error tenetur sed.</p>
+								<p class="media-object__meta">Date or details about this post</p>
+							</div>
+						</div>
+						<!-- end module -->
+					</div>
+				</div>
+
+				<h2 class="_module__title">Horizontal - medium</h2>
+
+				<div class="row">
+					<div class="col-md-8">
+						<!-- start module -->
+						<div class="media-object--horizontal">
+							<span class="media-object__image">image</span>
+							<div class="media-object__body">
+								<h1 class="media-object__title">Article title</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, aspernatur, quia modi minima debitis tempora ducimus quam vero impedit alias earum nemo error tenetur sed.</p>
+								<p class="media-object__meta">Date or details about this post</p>
+							</div>
+						</div>
+						<!-- end module -->
+					</div>
+				</div>
+
+				<h2 class="_module__title">Horizontal - narrow</h2>
+
+				<div class="row">
+					<div class="col-md-4">
+						<!-- start module -->
+						<div class="media-object--horizontal">
+							<span class="media-object__image">image</span>
+							<div class="media-object__body">
+								<h1 class="media-object__title">Article title</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, aspernatur, quia modi minima debitis tempora ducimus quam vero impedit alias earum nemo error tenetur sed.</p>
+								<p class="media-object__meta">Date or details about this post</p>
+							</div>
+						</div>
+						<!-- end module -->
+					</div>
+				</div>
+
+				<h2 class="_module__title">Vertical - tiny</h2>
+
+				<div class="row">
+					<div class="col-md-2">
+						<!-- start module -->
+						<div class="media-object--vertical">
+							<span class="media-object__image--full">image</span>
+							<div class="media-object__body">
+								<h1 class="media-object__title">Article title</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, aspernatur, quia modi minima debitis tempora ducimus quam vero impedit alias earum nemo error tenetur sed.</p>
+								<p class="media-object__meta">Date or details about this post</p>
+							</div>
+						</div>
+						<!-- end module -->
+					</div>
+				</div>
+
+				<h2 class="_module__title">Vertical - narrow</h2>
+
+				<div class="row">
+					<div class="col-md-4">
+						<!-- start module -->
+						<div class="media-object--vertical">
+							<span class="media-object__image--full">image</span>
+							<div class="media-object__body">
+								<h1 class="media-object__title">Article title</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, aspernatur, quia modi minima debitis tempora ducimus quam vero impedit alias earum nemo error tenetur sed.</p>
+								<p class="media-object__meta">Date or details about this post</p>
+							</div>
+						</div>
+						<!-- end module -->
+					</div>
+				</div>
+
+				<h2 class="_module__title">Vertical - medium</h2>
+
+				<div class="row">
+					<div class="col-md-8">
+						<!-- start module -->
+						<div class="media-object--vertical">
+							<span class="media-object__image">image</span>
+							<div class="media-object__body">
+								<h1 class="media-object__title">Article title</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, aspernatur, quia modi minima debitis tempora ducimus quam vero impedit alias earum nemo error tenetur sed.</p>
+								<p class="media-object__meta">Date or details about this post</p>
+							</div>
+						</div>
+						<!-- end module -->
+					</div>
+				</div>
+			</article>
+		</section>
+	</div>
 </body>
 </html>

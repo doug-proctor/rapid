@@ -1,0 +1,62 @@
+@import "bourbon/bourbon";
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+// already included?
+*, *:before, *:after {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+// Variables ///////////////////////////////////////////////////////////////////////////
+
+$base-colour: #555;
+$base-size: 18px;
+$base-lineheight: 26px;;
+
+$color-wireframe: transparentize(#a42b3b, 0.9);
+//$color-wireframe-border: #aaa;
+
+$standard-spacing: 25px;
+
+// Mixins and silent classes /////////////////////////////////////////////////////////////////////////////
+
+%wf-box {
+	background-color: $color-wireframe;
+	//border: 2px solid  $color-wireframe-border;
+}
+
+%wf-image {
+	@extend %wf-box;
+	display: block;
+	text-align: center;
+}
+
+%nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	li,
+		li > a {
+			// margin: 0;
+			// padding: 0;
+			display: inline-block;
+			zoom: 1;
+	}
+}
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+@import	"site/typo";
+@import	"site/header";
+@import	"site/modules";
+
+/////////////////////////////////////////////////////////////////////////////////////////
+
+@import	"modules/button";
+@import	"modules/header";
+@import	"modules/footer";
+@import	"modules/colbox";
+@import	"modules/media-object";

@@ -1,0 +1,39 @@
+.button {
+
+	$background-color: #aaa; // grey
+	$hover-color: darken($background-color, 5%);
+	$border-color: darken($background-color, 15%); // dark grey
+	$text-color: #fff;
+
+	background-color: $background-color;
+	border: 1px solid $border-color;
+	color: $text-color;
+
+	padding: 10px 20px;
+	border-radius: 3px;
+
+	&:hover {
+		background-color: $hover-color;
+		color: $text-color;
+		text-decoration: none;
+	}
+}
+
+.button--primary {
+
+	@extend .button;
+
+	$background-color: #3a982d; // green
+	$hover-color: darken($background-color, 5%);
+	$border-color: #245e1c; // dark green
+	$text-color: #fff;
+
+	background-color: $background-color;
+	border: 1px solid $border-color;
+	color: $text-color;
+
+	&:hover {
+		background-color: $hover-color;
+		color: $text-color;
+	}
+}

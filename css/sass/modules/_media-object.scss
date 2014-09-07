@@ -1,0 +1,70 @@
+$image-width: 150px;
+$image-height: $image-width * 0.666;
+
+%media-object {
+
+	@include clearfix;
+	clear: both;
+
+	.media-object__image {
+		@extend %wf-image;
+		float: left;
+		width: $image-width;
+		height: $image-height;
+		margin-right: 25px;
+
+		line-height: $image-height; // remove this if the element won't have any text in it.
+	}
+
+	.media-object__body {
+		margin: 0 0 0 $image-width + 25px;
+	}
+
+	.media-object__title {
+		margin: 0;
+		padding: 0;
+	}
+
+	.media-object__meta {
+
+	}
+}
+
+.media-object--horizontal {
+	@extend %media-object;
+	@extend %wf-box;
+}
+
+
+.media-object--vertical {
+	@extend %media-object;
+	@extend %wf-box;
+
+	.media-object__image {
+		@extend %wf-image;
+		width: $image-width;
+		height: $image-height;
+		margin: 0 auto;
+		display: block;
+		float: none;
+
+		line-height: $image-height; // remove this if the element won't have any text in it.
+	}
+
+	.media-object__image--full {
+		@extend .media-object__image;
+		width: 100%;
+	}
+
+	.media-object__body {
+		margin: 0;
+	}
+
+	.media-object__title {
+
+	}
+
+	.media-object__meta {
+
+	}
+}

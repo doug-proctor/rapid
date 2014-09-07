@@ -1,0 +1,31 @@
+.colbox {
+
+}
+.colbox__title {
+	font-weight: 700;
+}
+
+.colbox__body {
+
+}
+
+.colbox__icon {
+	@extend %wf-box;
+	border-radius: 50%;
+	display: block;
+	margin: 10px auto;
+	height: 100px;
+	width: 100px;
+}
+
+.colbox__image {
+	@extend %wf-box;
+	display: block;
+	margin: 10px 0;
+	height: 100px;
+	width: 100%;
+}
+
+.colbox__button {
+	display: inline-block;
+}

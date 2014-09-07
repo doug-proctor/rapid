@@ -1,0 +1,60 @@
+
+$header-height: 100px;
+$logo-width: 100px;
+
+._header__wrapper {
+	background: #520080 url(../img/geo.png) center center repeat-x;
+	margin: 0 0 50px 0;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+}
+
+._header {
+	@include clearfix;
+	height: $header-height;
+	width: 100%;
+}
+
+._header__logo {
+
+	height: $header-height;
+	width: $logo-width;
+	line-height: $header-height;
+	text-align: center;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 50px;
+	font-family: 'Bree Serif';
+	font-family: 'Nunito';
+	font-weight: 300;
+}
+
+._header__primary-nav {
+
+	float: right;
+	text-align: right;
+	list-style-type: none;
+	margin: 0;
+
+	& > li {
+		display: inline;
+	}
+}
+
+._header__primary-link {
+
+	display: inline-block;
+	padding: 0 20px;
+	line-height: $header-height;
+	color: #fff;
+	text-decoration: none;
+}
+
+._header__cta {
+
+	margin: 0 $standard-spacing;
+}

@@ -1,0 +1,89 @@
+/*
+ *
+ *
+ *	Base footer
+ *
+ *
+ */
+
+$footer-height: 50px;
+
+%footer {
+	@include clearfix;
+	min-height: $footer-height;
+	width: 100%;
+	position: relative;
+
+	.footer__primary-nav {
+		@extend %nav;
+		float: left;
+	}
+
+	.footer__secondary-nav {
+		@extend %nav;
+		float: right;
+	}
+
+	.footer__item {
+		padding: 10px 20px;
+		line-height: $footer-height;
+	}
+}
+
+///////////////////////
+
+.footer--thin {
+	@extend %footer;
+	@extend %wf-box;
+}
+
+///////////////////////
+
+.footer--thick {
+	@extend %footer;
+	@extend %wf-box;
+
+	.footer__list {
+		list-style-type: none;
+		margin: 0;
+		padding: 20px;
+		width: 25%;
+		float: left;
+	}
+
+	.footer__list-title {
+		font-weight: 700;
+	}
+
+	.footer__item {
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+._module {
+	margin: 0 0 40px 0;
+}
+
+._module__title {
+
+}
+
+._section {
+	margin: 0;
+}
+
+._section__title {
+	position: relative;
+	padding-top: 100px;
+	&:before {
+		content: '~';
+		font-size: 60px;
+		position: absolute;
+		left: -35px;
+		top: 97px;
+		color: #d2d2d2;
+	}
+}

@@ -1,0 +1,98 @@
+/*
+ *
+ *
+ *	Base header
+ *
+ *
+ */
+
+$header-height: 80px;
+$logo-width: 100px;
+
+%header {
+	@include clearfix;
+	min-height: $header-height;
+	width: 100%;
+	position: relative;
+
+	.header__logo {
+		@extend %wf-box;
+		min-height: $header-height;
+		width: $logo-width;
+		line-height: $header-height;
+		text-align: center;
+		display: block;
+		float: left;
+	}
+
+	//// Primary nav
+
+	.header__primary-nav {
+		@extend %nav;
+		float: right;
+
+		.header__primary-link {
+			padding: 0 20px;
+			line-height: $header-height;
+		}
+	}
+
+	//// Secondary nav
+
+	.header__secondary-nav {
+		@extend %nav;
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		.header__secondary-link {
+			padding: 10px;
+		}
+	}
+
+	.header__cta {
+		margin: 0 $standard-spacing;
+	}
+
+}
+
+///////////////////////
+
+.header--thin {
+	@extend %header;
+	@extend %wf-box;
+}
+
+////////////////////////
+
+.header--thick {
+	@extend %header;
+	@extend %wf-box;
+
+	.header__logo {
+		margin: 30px;
+	}
+
+	.header__primary-nav {
+		@extend %wf-box;
+
+		float: none;
+		clear: left;
+		text-align: left;
+		margin: 0;
+		padding: 0;
+
+		.header__primary-link {
+			line-height: $header-height / 2;
+		}
+	}
+
+
+}
+
+
+
+
+
+
+
